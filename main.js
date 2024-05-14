@@ -16,8 +16,6 @@ function eventListeners() {
 
 
 
-
-
 // Clases
 class Presupuesto {
     constructor(presupuesto) {
