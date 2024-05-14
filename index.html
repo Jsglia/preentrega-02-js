@@ -31,11 +31,11 @@
         <form action="" class="column__form">
           <div class="form__group form-padding">
             <label class="label-text" for="gasto">Gasto:</label>
-            <input type="text" class="form-control" placeholder="Introduce aquí tu gasto">
+            <input type="text" class="form-control" id="gasto" placeholder="Introduce aquí tu gasto">
           </div>
           <div class="form__group">
             <label class="label-text" for="cantidad">Cantidad:</label>
-            <input type="text" class="form-control" placeholder="Cantidad en €">
+            <input type="text" class="form-control" id="cantidad" placeholder="Cantidad en €">
           </div>
           <button type="submit" class="column__button">
             Agregar
@@ -56,13 +56,13 @@
       <div id="presupuesto" class="presupuesto"></div>
       <div class="alerta alert-primary">
         <p class="presupuesto-texto">Presupuesto: € 
-        <span class ="span_texto id="total">1200</span>
+        <span class ="span_texto" id="total">0</span>
         </p>
       </div>
 
       <div class="restante alert alert-success">
         <p class="restante-texto">Restante: € 
-        <span class ="span_texto" id="restante">1200</span>
+        <span class ="span_texto" id="restante">0</span>
       </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to right, #009209c2, #000428);
+    /* background: linear-gradient(to right, #009209c2, #000428); */
+    background-color: #009209;
     font-family: "Raleway", sans-serif;
 }
 
@@ -44,6 +45,14 @@ body {
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    .main__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 .presupuesto-texto {
