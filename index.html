@@ -1,96 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preentrega 02 - Julian Santanatoglia</title> 
-     <!--FONTS  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-</head>
-<body>
-<!-- HEADER -->
-  <header class="header__container">
-    <h1 class="header__texto">Presupuesto de la semana</h1>
-  </header>
-    
+    <title>Gastos APP</title>
 
-  <!-- MAIN -->
-  <main class="main__container">
-    <!-- FIRST COLUMN
-   -->
-      <div class="first-column">
-        <h2 class="column__text">Añade tus gastos aqui</h2>
-        <form action="" class="column__form">
-          <div class="form__group form-padding">
-            <label class="label-text" for="gasto">Gasto:</label>
-            <input type="text" class="form-control" id="gasto" placeholder="Introduce aquí tu gasto">
-          </div>
-          <div class="form__group">
-            <label class="label-text" for="cantidad">Cantidad:</label>
-            <input type="text" class="form-control" id="cantidad" placeholder="Cantidad en €">
-          </div>
-          <button type="submit" class="column__button">
-            Agregar
-          </button>
-        </form>
-      </div>
-    
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 class="text-center">Presupuestador APP</h1>
+        </header>
+        <section class="contenido-principal">
+            <div class="row">
+                <div class="col ">
+                    <div class="contenido primario">
+                        <h2 class="text-center">Añade tus gastos</h2>
+                            <form id="agregar-gasto" action="#">
+                                <div class="form-group">
+                                    <label for="gasto">Gasto:</label>
+                                    <input type="text" class="form-control" id="gasto" placeholder="Nombre Gasto">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cantidad">Cantidad:</label>
+                                    <input type="text" class="form-control" id="cantidad" placeholder="Cantidad en €">
+                                </div>
 
-      <!-- SECOND COLUMN -->
-      <div class="second-column">
-        <div class="column-text">
-        <h2 class="column__text texto-listado">Listado</h2>
-       </div>
-      <div id="gastos">
-        <ul class="list-group"></ul>
-      </div>
+                                <button type="submit" class="btn btn-primary">Agregar</button>
+                            </form>
 
-      <div id="presupuesto" class="presupuesto"></div>
-      <div class="alerta alert-primary">
-        <p class="presupuesto-texto">Presupuesto: € 
-        <span class ="span_texto" id="total">0</span>
-        </p>
-      </div>
+                    </div> <!--.contenido-->
+                </div> <!--.col-->
 
-      <div class="restante alert alert-success">
-        <p class="restante-texto">Restante: € 
-        <span class ="span_texto" id="restante">0</span>
-      </p>
-      </div>
+                <div class="col">
+                    <div class="contenido secundario">
+
+                        <h2 class="text-center">Listado</h2>
+
+                        <div id="gastos">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-primary color-green">
+                                <p>Presupuesto: € <span id="total"></span> </p>
+                            </div>
+                            <div class="restante alert alert-success">
+                                <p>Restante: € <span id="restante"></span></p>
+                            </div>
+                        </div> <!--.presupuesto-->
+                    </div> <!--.contenido-->
+                </div><!--.col-->
+            </div> <!--.row-->
+        </section>
     </div>
-  </div>
-  </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
