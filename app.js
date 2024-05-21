@@ -85,7 +85,7 @@ class UI {
                 ${nombre}
                 <span class="badge badge-primary badge-pill">$ ${cantidad}</span>
             `;
-
+            
             // boton borrar gasto.
             const btnBorrar = document.createElement('button');
             btnBorrar.classList.add('btn', 'btn-danger', 'borrar-gasto');
